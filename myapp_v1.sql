@@ -1,4 +1,4 @@
---changeset yourname:yourname1
+changeset my_app:v1
 --rollback DROP TABLE yourname;
 CREATE TABLE new_table (
     id int primary key,
