@@ -59,7 +59,7 @@ jobs:
           # The JDBC driver class
           # string
           # Optional
-          #driver: "org.postgresql.Driver"
+          driver: "org.postgresql.Driver"
       
           # The JDBC driver properties file
           # string
