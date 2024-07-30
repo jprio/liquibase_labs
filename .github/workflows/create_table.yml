@@ -21,9 +21,72 @@ jobs:
       - uses: actions/checkout@v2
       - uses:  liquibase-github-actions/update-sql@v4.29.0
         with:
-          operation: 'update'
-          classpath: '.'
+          # The root changelog
+          # string
+          # Required
           changeLogFile: 'myapp_v1.sql'
-          username: ${{ secrets.USERNAME }}
+      
+          # The JDBC database connection URL
+          # string
+          # Required
+          url: "jdbc:postgres://tai.db.elephantsql.com/lwdaheka"
+      
+          # Fully-qualified class which specifies a ChangeExecListener
+          # string
+          # Optional
+          #changeExecListenerClass: ""
+      
+          # Path to a properties file for the ChangeExecListenerClass
+          # string
+          # Optional
+          #changeExecListenerPropertiesFile: ""
+      
+          # Changeset contexts to match
+          # string
+          # Optional
+          #contextFilter: ""
+      
+          # The default catalog name to use for the database connection
+          # string
+          # Optional
+          #defaultCatalogName: ""
+      
+          # The default schema name to use for the database connection
+          # string
+          # Optional
+          #defaultSchemaName: ""
+      
+          # The JDBC driver class
+          # string
+          # Optional
+          #driver: "org.postgresql.Driver"
+      
+          # The JDBC driver properties file
+          # string
+          # Optional
+          #driverPropertiesFile: ""
+      
+          # Changeset labels to match
+          # string
+          # Optional
+          #labelFilter: ""
+      
+          # Control whether names of objects in the default catalog are fully qualified or not. If true they are. If false, only objects outside the default catalog are fully qualified
+          # bool
+          # Optional
+          #outputDefaultCatalog: ""
+      
+          # Control whether names of objects in the default schema are fully qualified or not. If true they are. If false, only objects outside the default schema are fully qualified
+          # bool
+          # Optional
+          #outputDefaultSchema: ""
+      
+          # Password to use to connect to the database
+          # string
+          # Optional
           password: ${{ secrets.PASSWORD }}
-          url: ${{ secrets.URL }}
+      
+          # Username to use to connect to the database
+          # string
+          # Optional
+          username: ${{ secrets.USERNAME }}
