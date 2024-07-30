@@ -24,7 +24,7 @@ jobs:
           # The root changelog
           # string
           # Required
-          changeLogFile: 'myapp_v1.sql'
+          changeLogFile: 'myapp_v2.sql'
       
           # The JDBC database connection URL
           # string
