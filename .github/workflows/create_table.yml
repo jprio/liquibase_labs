@@ -29,7 +29,7 @@ jobs:
           # The JDBC database connection URL
           # string
           # Required
-          url: "jdbc:postgres://flora.db.elephantsql.com/beqnptlr"
+          url: "jdbc:postgresql://flora.db.elephantsql.com/beqnptlr"
       
           # Fully-qualified class which specifies a ChangeExecListener
           # string
