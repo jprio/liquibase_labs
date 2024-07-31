@@ -49,12 +49,12 @@ jobs:
           # The default catalog name to use for the database connection
           # string
           # Optional
-          defaultCatalogName: "beqnptlr"
+          #defaultCatalogName: "beqnptlr"
       
           # The default schema name to use for the database connection
           # string
           # Optional
-          defaultSchemaName: "beqnptlr"
+          #defaultSchemaName: "beqnptlr"
       
           # The JDBC driver class
           # string
