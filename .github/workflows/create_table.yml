@@ -19,7 +19,7 @@ jobs:
     name: Test Liquibase Action
     steps:
       - uses: actions/checkout@v2
-      - uses:  liquibase-github-actions/update-sql@v4.29.0
+      - uses:  liquibase-github-actions/update@v4.29.0
         with:
           # The root changelog
           # string
