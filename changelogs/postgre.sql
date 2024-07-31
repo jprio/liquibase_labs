@@ -27,3 +27,7 @@ alter table person add country varchar(2)
 --changeset amy:4
 --rollback ALTER TABLE person DROP COLUMN state;
 alter table person add state varchar(2)
+
+--changeset jp:1
+--rollback ALTER TABLE person DROP COLUMN surname;
+alter table person add surname varchar(20)
