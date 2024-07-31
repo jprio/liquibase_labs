@@ -49,7 +49,7 @@ jobs:
           # The default catalog name to use for the database connection
           # string
           # Optional
-          #defaultCatalogName: ""
+          defaultCatalogName: "beqnptlr"
       
           # The default schema name to use for the database connection
           # string
