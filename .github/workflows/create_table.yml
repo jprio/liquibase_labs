@@ -24,7 +24,7 @@ jobs:
           # The root changelog
           # string
           # Required
-          changeLogFile: 'myapp_v1.sql'
+          changeLogFile: 'changelogs/postgre.sql'
       
           # The JDBC database connection URL
           # string
