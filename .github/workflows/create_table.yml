@@ -54,7 +54,7 @@ jobs:
           # The default schema name to use for the database connection
           # string
           # Optional
-          #defaultSchemaName: ""
+          defaultSchemaName: "beqnptlr"
       
           # The JDBC driver class
           # string
